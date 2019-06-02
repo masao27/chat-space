@@ -15,9 +15,9 @@ Things you may want to cover:
 ## users table
 |Column|Type|Options|
 |------|----|-------|
-|name|string|null: false|
-|email|string|null: false, unique: true|
-|password|string|null: false|
+|name|string|null: false,  unique: true, index: true|
+|email|string|null: false, default: ""|
+|password|string|null: false,  default: ""|
 
 ### Association
 - has_many :messages
