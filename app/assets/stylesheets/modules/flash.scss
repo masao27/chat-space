@@ -1,0 +1,19 @@
+.flash-box {
+  font-size: 1rem;  
+  font-weight: lighter;
+  width: 100vw;
+}
+
+.notification {
+  .notice {
+    background-color: $light_blue;
+    color: $white;
+    text-align: center;
+  }
+
+  .alert {
+    background-color: $alert_orange;
+    color: $white;
+    text-align: center;
+  }
+}
