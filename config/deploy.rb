@@ -42,7 +42,7 @@ set :keep_releases, 5
 # Uncomment the following to require manually verifying the host key before first deploy.
 # set :ssh_options, verify_host_key: :secure
 set :ssh_options, auth_methods: ['publickey'],
-                  keys: ['~/.ssh/masao1.pem']  ※例：~/.ssh/key_pem.pem
+                  keys: ['~/.ssh/masao1.pem']
 set :unicorn_pid, -> { "#{shared_path}/tmp/pids/unicorn.pid" }
 set :unicorn_config_path, -> { "#{current_path}/config/unicorn.rb" }
 
