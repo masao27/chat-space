@@ -59,6 +59,7 @@ set :unicorn_config_path, -> { "#{current_path}/config/unicorn.rb" }
 #     invoke 'unicorn:restart'
 #   end
 # end
+
 after 'deploy:publishing', 'deploy:restart'
 namespace :deploy do
   task :restart do
